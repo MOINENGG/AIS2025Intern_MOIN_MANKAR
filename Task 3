@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Year</th>
+        <th>Department</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Moin Mankar</td>
+        <td>3rd</td>
+        <td>Computer</td>
+      </tr>
+      <tr>
+        <td>Sushil</td>
+        <td>2nd</td>
+        <td>IT</td>
+      </tr>
+      <tr>
+        <td>Akshay</td>
+        <td>3rd</td>
+        <td>Civil</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Total Students: 3</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
