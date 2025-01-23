@@ -20,3 +20,10 @@ In Day 1 of my internship, I completed the following tasks:
    - data of students acoording to their name , year and department
    - Styled the table with borders and background colors for better readability.
 
+
+
+DAY 2
+
+-Created my own multimedia html page
+-consists of image,video and audio with controls
+
