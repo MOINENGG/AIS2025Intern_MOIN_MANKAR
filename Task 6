@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple HTML Page</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome to My  Page</h1>
+    </header>
+
+    <nav>
+        <a href="#unordered-list">Unordered List</a> |
+        <a href="#ordered-list">Ordered List</a> |
+        <a href="#footer">Footer</a>
+    </nav>
+
+    <main>
+       
+        <section id="unordered-list">
+            <h2>Unordered List</h2>
+            <p>This is an example of an unordered list:</p>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </section>
+
+        
+        <section id="ordered-list">
+            <h2>Ordered List with Nested List</h2>
+            <p>This is an example of an ordered list with a nested structure:</p>
+            <ol>
+                <li>Main Topic 1</li>
+                <li>Main Topic 2
+                    <ol>
+                        <li>Subtopic 2.1</li>
+                        <li>Subtopic 2.2</li>
+                    </ol>
+                </li>
+                <li>Main Topic 3</li>
+            </ol>
+        </section>
+    </main>
+
+   
+    <footer id="footer">
+        <p>&copy;  All rights reserved.</p>
+    </footer>
+</body>
+</html>
