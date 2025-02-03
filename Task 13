@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        figure {
+            margin: 10px;
+            cursor: pointer;
+        }
+        img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox img {
+            width: 60%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <figure onclick="openLightbox('https://th.bing.com/th/id/OIP.FXBuJ8RmUJkOTSC-qd-M6wHaEK?rs=1&pid=ImgDetMain')">
+            <img src="https://th.bing.com/th/id/OIP.FXBuJ8RmUJkOTSC-qd-M6wHaEK?rs=1&pid=ImgDetMain" alt="Mountain">
+            <figcaption>Image 1</figcaption>
+        </figure>
+        <figure onclick="openLightbox('https://th.bing.com/th/id/OIP.vSqy4ZQonzSy5dD96_X9qgHaEa?rs=1&pid=ImgDetMain')">
+            <img src="https://th.bing.com/th/id/OIP.vSqy4ZQonzSy5dD96_X9qgHaEa?rs=1&pid=ImgDetMain" alt="River">
+            <figcaption>Image 2</figcaption>
+        </figure>
+        <figure onclick="openLightbox('https://th.bing.com/th/id/OIP.pV6yEpZ7XDp_DMWBAgicKAHaE9?w=293&h=196&c=7&r=0&o=5&dpr=1.3&pid=1.7')">
+            <img src="https://th.bing.com/th/id/OIP.pV6yEpZ7XDp_DMWBAgicKAHaE9?w=293&h=196&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Caves">
+            <figcaption>Image 3</figcaption>
+        </figure>
+    </div>
+    
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img">
+    </div>
+    
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
