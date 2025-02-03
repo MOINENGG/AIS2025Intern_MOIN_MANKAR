@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive Website</h1>
+    </header>
+    <main>
+        <section class="content">
+            <p>This is a simple responsive layout.</p>
+            <img src="https://th.bing.com/th/id/OIP.Nfd-_b2A1A1D6AsvReUmgAHaEc?rs=1&pid=ImgDetMain" alt="Mountain image">
+        </section>
+    </main>
+</body>
+</html>
+
+
+css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+}
+
+.content {
+    max-width: 800px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+
+/* Tablet (width < 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 10px;
+    }
+}
+
+/* Mobile (width < 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
