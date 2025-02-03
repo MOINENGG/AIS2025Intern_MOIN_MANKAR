@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible College Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        .hidden {
+            position: absolute;
+            left: -9999px;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <nav role="navigation" aria-label="Main Navigation">
+        
+    </nav>
+
+    <main role="main">
+        <h1>Welcome to Our College</h1>
+        <p>Providing quality education for a better future.</p>
+        
+     
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" aria-keyshortcuts="Alt+S">Submit</button>
+        </form>
+    </main>
+
+  
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.altKey && event.key === 's') {
+                event.preventDefault();
+                document.querySelector("button[type='submit']").click();
+            }
+        });
+    </script>
+
+</body>
+</html>
