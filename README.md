@@ -27,3 +27,15 @@ DAY 2
 -Created my own multimedia html page
 -consists of image,video and audio with controls
 
+
+DAY 3
+
+-made a blog structure using semantic elements and a nav section to redirect to another page
+
+
+DAY 4
+
+-created an ordered and unordered list
+-created a responsive layout page
+
+
