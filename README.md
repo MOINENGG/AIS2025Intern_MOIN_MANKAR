@@ -36,6 +36,12 @@ DAY 3
 DAY 4
 
 -created an ordered and unordered list
--created a responsive layout page
+-created a responsive layout page with adjustable layout for different devices
+-created a simple webpage layout using Css flexbox
+
+
+DAY 5
+
+-created a website
 
 
